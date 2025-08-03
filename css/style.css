@@ -31,6 +31,7 @@ header {
 
 #idiomaSite {
     font-size: 1rem;
+    font-weight: bold;
     background: transparent;
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
@@ -59,12 +60,14 @@ nav ul {
 nav ul a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
     padding: 10px 15px;
 }
 
 nav ul a:hover {
-    background-color: var(--primary-color);
-    border-radius: 4px;
+    color: var(--primary-color);
+    border-bottom: var(--primary-color) 2px solid;
 }
 
 
@@ -93,15 +96,31 @@ p {
     border-radius: 13px;
     padding: 15px 25px;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s ease, background-color 1s ease;
 }
 
 #cv-btn:hover {
     background-color: var(--primary-color);
     border: 3px solid var(--primary-color);
     color: white;
+    transform: scale(1.1);
 }
         
 #icons-social img {
-    width: 30px; 
+    width: 50px; 
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--background-header);
+    border-radius: 13px;
+    transform: scale(1);
+    transition: transform 1s ease, background-color 1s ease;
 }
+
+#icons-social img:hover {
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    transform: scale(1.2);
+}
+
   
