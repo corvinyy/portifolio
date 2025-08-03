@@ -14,45 +14,58 @@
         <img src="assets/logo_corviny.png" alt="Logo Corviny" class="logo">
         <nav>
             <ul>
-                <a href="#home">Home</a>
+                <a href="#home" class="active">Home</a>
                 <a href="#sobre">Sobre Mim</a>
                 <a href="#habilidades">Habilidades</a>
                 <a href="#projetos">Projetos</a>
             </ul>
         </nav>
 
-        <button id="idiomaSite">
-            <i class="fa-solid fa-rotate"></i> 
-            PT-BR
-        </button>
+        <select name="idioma" id="idiomaSite">
+            <option value="pt-br">PT-BR</option>
+            <option value="en-us">EN-US</option>
+        </select>
     </header>   
     
     <div id="home-section">
-        <h1 id="foto">foto</h1>
-        <h1 id="home">Olá, sou a Lorena, também conhecida como Corviny</h1>
-        <h1 id="home">Desenvolvedora Web Full-Stack</h1>
-        <p>
-            Trabalho criando experiências digitais que atendem a 
-            diferentes necessidades e objetivos, integrando design, 
-            funcionalidade e estrutura de dados.
-        </p>
+        <div class="home-container">
+            <div class="home-foto">
+                <h1 id="foto">foto</h1>
+            </div>
 
-        <button id="cv-btn">
-            <i class="fa-solid fa-rotate"></i> 
-            Baixar CV    
-        </button>
+            <div class="home-texto">
+                <h1>Olá, sou a 
+                    <span style="color: #7ad3ff;">Lorena</span>, 
+                    também conhecida como 
+                    <span style="color: #7ad3ff;">Corviny</span>
+                </h1>
+                <h1 id="fullstack">Desenvolvedora Web Full-Stack</h1>
+                <p>
+                    Trabalho criando experiências digitais que atendem a 
+                    diferentes necessidades e objetivos, integrando design, 
+                    funcionalidade e estrutura de dados.
+                </p>
 
-        <div id="icons-social">
-            <div id="links-social">
-                <a href="https://www.linkedin.com/in/lorenacviny/" target="_blank">
-                    <img src="assets/icons/in-icon.png" alt="Icon linkedin">
-                </a>
-                <a href="https://github.com/corvinyy" target="_blank">
-                    <img src="assets/icons/github-icon.png" alt="Icon GitHub">
-                </a>
-                <a href="https://wa.me/5561999794098" target="_blank">
-                    <img src="assets/icons/wpp-icon.png" alt="Icon WhatsApp">
-                </a>
+                <div class="cv-botao">
+                    <button id="cv-btn">
+                        <i class="fa-solid fa-rotate"></i> 
+                        Baixar CV    
+                    </button>
+                </div>
+                
+                <div id="icons-social">
+                    <div id="links-social">
+                        <a href="https://www.linkedin.com/in/lorenacviny/" target="_blank">
+                            <img src="assets/icons/in-icon.png" alt="Icon linkedin">
+                        </a>
+                        <a href="https://github.com/corvinyy" target="_blank">
+                            <img src="assets/icons/github-icon.png" alt="Icon GitHub">
+                        </a>
+                        <a href="https://wa.me/5561999794098" target="_blank">
+                            <img src="assets/icons/wpp-icon.png" alt="Icon WhatsApp">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
