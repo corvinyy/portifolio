@@ -120,16 +120,13 @@ nav ul a.active {
   flex-direction: column;
   padding: 35px;;
   margin-left: 100px;
+  gap: 26px; 
 }
 
 #home-section h1,
 #home-section p,
 #cv-btn {
     margin: 0;
-}
-
-.home-texto {
-    gap: 26px; 
 }
 
 h1 {
@@ -199,10 +196,36 @@ p {
 
 .sobremim-titulo {
     text-align: center;
+    font-size: 25px;
     width: 100%;
     margin-bottom: 20px;
+    
 }
 
 .sobremim-titulo h1 {
     color: var(--primary-color);
+    /*border-bottom: 2px solid var(--primary-color);*/
+}
+
+.sobremim-foto #foto {
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    background-color: var(--primary-color);
+    border: 5px solid var(--primary-color);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.sobremim-texto {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    margin-right: 600px;
+    gap: 26px; 
+}
+
+.sobremim-texto p {
+    margin: 0;
 }
