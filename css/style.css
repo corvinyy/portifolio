@@ -197,14 +197,13 @@ p {
 .sobremim-titulo {
     text-align: center;
     font-size: 25px;
-    width: 100%;
     margin-bottom: 20px;
     
 }
 
 .sobremim-titulo h1 {
     color: var(--primary-color);
-    /*border-bottom: 2px solid var(--primary-color);*/
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .sobremim-foto #foto {
