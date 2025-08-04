@@ -22,7 +22,12 @@ body {
 
 }
 
+/* ------------------ HEADER SECTION ------------------ */
 header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
     background-color: var(--background-header);
     color: white;
     padding: 20px 20px;
@@ -79,6 +84,8 @@ nav ul a.active {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
 }
+
+/* ------------------ HOME SECTION ------------------ */
 
 #home-section {
   display: flex;
@@ -172,4 +179,30 @@ p {
     transform: scale(1.2);
 }
 
-  
+/* ------------------ SOBRE MIM SECTION ------------------ */
+
+#sobremim-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremim-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sobremim-titulo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sobremim-titulo h1 {
+    color: var(--primary-color);
+}
