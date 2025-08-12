@@ -85,6 +85,24 @@ nav ul a.active {
     border-bottom: 2px solid var(--primary-color);
 }
 
+/* ------------------ ICONS SOCIAL ------------------ */
+
+.icons-social img {
+    width: 50px; 
+    padding: 10px;
+    background-color: transparent;
+    margin: 4px;
+    border-radius: 13px;
+    transform: scale(1);
+    transition: transform 1s ease, background-color 1s ease;
+}
+
+.icons-social img:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+
 /* ------------------ HOME SECTION ------------------ */
 
 #home-section {
@@ -104,6 +122,13 @@ nav ul a.active {
   width: 100%;
 }
 
+.home-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .home-foto #foto {
   text-align: center;
   width: 350px;
@@ -112,6 +137,8 @@ nav ul a.active {
   border: 5px solid var(--primary-color);
   border-radius: 15px;
   margin-bottom: 30px;
+  flex-wrap: wrap; 
+
 }
 
 .home-texto {
@@ -122,6 +149,8 @@ nav ul a.active {
   margin-left: 100px;
   gap: 26px; 
 }
+
+
 
 #home-section h1,
 #home-section p,
@@ -138,6 +167,7 @@ h1 {
 }
 p {
     color: #ffffff;
+    font-size: 1.2rem;
 }
 
 
@@ -160,26 +190,12 @@ p {
     color: white;
     transform: scale(1.1);
 }
-        
-#icons-social img {
-    width: 50px; 
-    padding: 10px;
-    background-color: transparent;
-    margin: 4px;
-    border-radius: 13px;
-    transform: scale(1);
-    transition: transform 1s ease, background-color 1s ease;
-}
-
-#icons-social img:hover {
-    background-color: var(--primary-color);
-    transform: scale(1.2);
-}
 
 /* ------------------ SOBRE MIM SECTION ------------------ */
 
 #sobremim-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -188,22 +204,30 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
     flex-wrap: wrap; 
-    gap: 40px;
+    gap: 50px;
     max-width: 1200px;
     width: 100%;
-}
-
-.sobremim-titulo {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
     
 }
 
-.sobremim-titulo h1 {
+#sobremim-titulo {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+#sobremim-titulo h1 {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
+}
+
+.sobremim-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .sobremim-foto #foto {
@@ -220,11 +244,11 @@ p {
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    padding: 35px;
-    margin-right: 600px;
     gap: 26px; 
+    margin-right: 100px;
 }
 
 .sobremim-texto p {
     margin: 0;
 }
+
