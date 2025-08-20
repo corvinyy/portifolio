@@ -138,7 +138,6 @@ nav ul a.active {
   border-radius: 15px;
   margin-bottom: 30px;
   flex-wrap: wrap; 
-
 }
 
 .home-texto {
@@ -230,7 +229,7 @@ p {
     flex-direction: column;
 }
 
-.sobremim-foto #foto {
+.sobremim-foto img {
     text-align: center;
     width: 350px;
     height: 350px;
