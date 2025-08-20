@@ -169,8 +169,6 @@ nav ul a.active::after {
   gap: 26px; 
 }
 
-
-
 #home-section h1,
 #home-section p,
 #cv-btn {
@@ -271,3 +269,23 @@ p {
     margin: 0;
 }
 
+/* ------------------ HABILIDADES SECTION ------------------ */
+
+#habilidades-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#habil-titulo {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+#habil-titulo h1 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
