@@ -9,11 +9,11 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 ## ✨ Features
 
--  Apresentação pessoal com breve biografia `(fazendo)`
+-  Apresentação pessoal com breve biografia 
 -  Links para redes sociais e contato 
 -  Seção de projetos com links e descrições `(fazendo)`
 -  Design responsivo (compatível com desktop e mobile) 
--  Animações suaves e interativas com CSS `(fazendo)`
+-  Animações suaves e interativas com CSS 
 -  Versão em Inglês e Português `(fazendo)`
 
 ---
