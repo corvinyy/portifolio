@@ -3,7 +3,7 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 ### 🛠️ Status
 **⚙️Trabalho em progresso**  
- Ainda estou começando a fazer!
+ Design 70% pronto, botões interativos ainda não incluídos e falta a adição dos projetos!
 
 ---
 
