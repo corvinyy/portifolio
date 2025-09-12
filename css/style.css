@@ -295,6 +295,7 @@ p {
 }
 
 .habil-container {
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -305,6 +306,25 @@ p {
 }
 
 #tecs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#tecs2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#tools {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
