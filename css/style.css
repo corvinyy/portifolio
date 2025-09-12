@@ -336,6 +336,7 @@ p {
 .habil-icons {
     width: 100px;
     height: 100px;
+    flex-direction: column;
     background-color: var(--background-icons);
     border: 5px solid #07071b;
     border-radius: 15px;
@@ -344,10 +345,32 @@ p {
     align-items: center;
     cursor: pointer;
     transform: scale(1);
-    transition: transform 1s ease;
+    transition: transform 1s ease; 
+    overflow: hidden;
+    position: relative;
 }
 
 .habil-icons:hover {
     box-shadow: 0 0 10px 10px var(--glow-color);
     transform: scale(1.2);
+}
+
+.habil-icons img {
+  transition: transform 0.3s ease;
+}
+
+.tec-name {
+  height: 0;
+  opacity: 0;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  transition: opacity 0.3s ease, height 0.3s ease;
+  overflow: hidden;
+}
+
+.habil-icons:hover .tec-name {
+  height: 18px;
+  opacity: 1;
 }
