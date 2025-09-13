@@ -3,7 +3,7 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 ### 🛠️ Status
 **⚙️Trabalho em progresso**  
- Design 70% pronto, falta a adição dos projetos e função de mudar para o inglês!
+ Falta melhoria na responsividade, botão de baixar CV e função de mudar para o inglês!
 
 ---
 
