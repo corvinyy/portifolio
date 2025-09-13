@@ -11,8 +11,8 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 -  Apresentação pessoal com breve biografia 
 -  Links para redes sociais e contato 
--  Seção de projetos com links e descrições `(fazendo)`
--  Design responsivo (compatível com desktop e mobile) 
+-  Seção de projetos com links e descrições 
+-  Design responsivo (compatível com desktop e mobile) `(melhorando)`
 -  Animações suaves e interativas com CSS 
 -  Versão em Inglês e Português `(fazendo)`
 
