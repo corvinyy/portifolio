@@ -56,9 +56,16 @@ header {
     color: white;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+
+}
+
 .logo {
     height: 50px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 nav ul {
@@ -145,22 +152,20 @@ nav ul a.active::after {
 }
 
 .home-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.home-foto #foto {
-  text-align: center;
-  width: 350px;
-  height: 350px;
-  background-color: var(--primary-color);
-  border: 5px solid var(--primary-color);
-  border-radius: 15px;
-  box-shadow: 0 0 140px 10px var(--glow-color);
-  margin-bottom: 30px;
-  flex-wrap: wrap; 
+.home-foto img {
+    width: 350px;
+    height: 370px;
+    background-color: var(--background-header);
+    border: 5px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 200px 10px var(--glow-color);
+    margin-bottom: 30px;
 }
 
 .home-texto {
@@ -185,6 +190,7 @@ h1 {
 #fullstack {
     color: var(--primary-color);
 }
+
 p {
     color: #ffffff;
     font-size: 1.2rem;
@@ -197,7 +203,7 @@ p {
     background: linear-gradient(var(--background-color), var(--background-color-2));
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
-    border-radius: 13px;
+    border-radius: 10px;
     padding: 15px 25px;
     cursor: pointer;
     transform: scale(1);
@@ -416,24 +422,32 @@ p {
 }
 
 .card-photo {
-  background-color: white;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin-bottom: 15px;
+    background-color: white;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    border: white 3px solid;
+    box-shadow: 0 0 5px 1px white
 }
 
 .proj-cards h3 {
     color: var(--primary-color);
     margin: 0 0 10px 0;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .proj-cards p {
     color: white;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .tags {
