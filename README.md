@@ -1,4 +1,8 @@
 # 💼 Portifólio 💼
+---
+
+![Preview of the current progress](./assets/imgs/projetos/portifolio.png)
+
 Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar meus projetos, habilidades, e um pouco sobre mim. Ele foi criado com foco em design responsivo, performance e acessibilidade, com o objetivo de refletir minha identidade profissional e servir como porta de entrada para oportunidades na área de desenvolvimento.
 
 ### 🛠️ Status
