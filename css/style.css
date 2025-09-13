@@ -469,9 +469,13 @@ p {
     
 }
 
-.actions-btn, .actions a {
+.actions-link {
     font-size: 18px;
     font-weight: bold;
+    align-items: center;
+    display: inline-flex;
+    gap: 8px;
+    text-decoration: none;
     background: linear-gradient(#0a0925, #1d1c66);
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
@@ -480,11 +484,13 @@ p {
     cursor: pointer;
     transform: scale(1);
     transition: transform 1s ease, background-color 1s ease;
+  
 }
 
-.actions-btn:hover {
+.actions-link:hover {
     background: var(--primary-color);
     border: 3px solid var(--primary-color);
     color: white;
     transform: scale(1.1);
+
 }
