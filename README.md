@@ -17,7 +17,7 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 -  Links para redes sociais e contato 
 -  Seção de projetos com links e descrições 
 -  Design responsivo (compatível com desktop e mobile) `(melhorando)`
--  Animações suaves e interativas com CSS 
+-  Animações suaves e interativas com CSS `(fazendo)`
 -  Versão em Inglês e Português `(fazendo)`
 
 ---
