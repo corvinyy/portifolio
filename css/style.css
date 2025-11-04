@@ -116,6 +116,10 @@ nav ul a.active::after {
 
 /* ------------------ ICONS SOCIAL ------------------ */
 
+.icons-social {
+    padding: 10px;
+}
+
 .icons-social img {
     width: 50px; 
     padding: 10px;
@@ -124,6 +128,7 @@ nav ul a.active::after {
     border-radius: 13px;
     transform: scale(1);
     transition: transform 1s ease, background-color 1s ease;
+    text-decoration: none;
 }
 
 .icons-social img:hover {
@@ -194,6 +199,7 @@ h1 {
 p {
     color: #ffffff;
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 
@@ -411,11 +417,15 @@ p {
     flex-direction: column;
 }
 
-.div-proj {
+.div-proj, .div-proj2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.div-proj2 {
+    margin-top: 50px;
 }
 
 .proj-cards {
