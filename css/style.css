@@ -36,6 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: padding 0.3s ease;
 }
 
 #idiomaSite {
@@ -48,6 +49,7 @@ header {
     cursor: pointer;
     padding: 10px 1px;
     margin-right: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #idiomaSite:hover {
@@ -59,8 +61,7 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 0px;
-
+    gap: 10px; /* Ajuste de gap */
 }
 
 .logo {
@@ -73,6 +74,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 20px;
 }
 
 nav ul a {
@@ -107,11 +109,45 @@ nav ul a:hover::after {
 }
 
 nav ul a.active {
-    color: var(--primary-color);   
+    color: var(--primary-color);
 }
 
 nav ul a.active::after {
     transform: scaleX(1);
+}
+
+/* RESPONSIVIDADE NO HEADER */
+@media (max-width: 1025px) {
+    header {
+        position: relative;
+        padding: 10px 15px;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--background-icons);
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul a {
+        font-size: 1.1rem;
+        padding: 8px 12px;
+    }
+
+    #idiomaSite {
+        margin-right: 0;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
 }
 
 /* ------------------ ICONS SOCIAL ------------------ */
@@ -121,7 +157,7 @@ nav ul a.active::after {
 }
 
 .icons-social img {
-    width: 50px; 
+    width: 50px;
     padding: 10px;
     background-color: transparent;
     margin: 4px;
@@ -140,20 +176,20 @@ nav ul a.active::after {
 /* ------------------ HOME SECTION ------------------ */
 
 #home-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 20px;
 }
 
 .home-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; 
-  gap: 40px;
-  max-width: 1200px;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .home-foto {
@@ -174,12 +210,12 @@ nav ul a.active::after {
 }
 
 .home-texto {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  padding: 35px;;
-  margin-left: 100px;
-  gap: 26px; 
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    margin-left: 100px;
+    gap: 26px;
 }
 
 #home-section h1,
@@ -202,7 +238,6 @@ p {
     text-align: justify;
 }
 
-
 #cv-btn {
     font-size: 1rem;
     font-weight: bold;
@@ -223,6 +258,7 @@ p {
     transform: scale(1.1);
 }
 
+
 /* ------------------ SOBRE MIM SECTION ------------------ */
 
 #sobremim-section {
@@ -230,6 +266,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .sobremim-container {
@@ -237,11 +274,10 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 50px;
     max-width: 1200px;
     width: 100%;
-    
 }
 
 #sobremim-titulo {
@@ -277,7 +313,7 @@ p {
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 26px; 
+    gap: 26px;
     margin-right: 100px;
 }
 
@@ -307,42 +343,22 @@ p {
 }
 
 .habil-container {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 40px;
     max-width: 1200px;
     width: 100%;
 }
 
-#tecs {
+#tecs, #tecs2, #tools {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    
-}
-
-#tecs2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#tools {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 .habil-icons {
@@ -357,7 +373,7 @@ p {
     align-items: center;
     cursor: pointer;
     transform: scale(1);
-    transition: transform 1s ease; 
+    transition: transform 0.3s ease; 
     overflow: hidden;
     position: relative;
 }
@@ -372,19 +388,19 @@ p {
 }
 
 .tec-name {
-  height: 0;
-  opacity: 0;
-  margin-top: 5px;
-  font-size: 13px;
-  font-weight: bold;
-  color: white;
-  transition: opacity 0.3s ease, height 0.3s ease;
-  overflow: hidden;
+    height: 0;
+    opacity: 0;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    transition: opacity 0.3s ease, height 0.3s ease;
+    overflow: hidden;
 }
 
 .habil-icons:hover .tec-name {
-  height: 18px;
-  opacity: 1;
+    height: 18px;
+    opacity: 1;
 }
 
 /* ------------------ PROJETOS SECTION ------------------ */
@@ -527,5 +543,148 @@ p {
     border: 3px solid var(--primary-color);
     color: white;
     transform: scale(1.1);
+
+}
+
+/* -------------------- CELULARES ---------------------- */
+@media (max-width: 768px) {
+    #home-section {
+        padding: 80px 20px;     
+    }
+
+    .home-container {
+        flex-direction: column;     
+        gap: 20px;
+    }
+
+    .home-foto img {
+        width: 250px;   
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .home-texto {
+        max-width: 100%; 
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem; 
+    }
+
+    #cv-btn {
+        width: 100%; 
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .icons-social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;  
+    }
+
+    .icons-social img {
+        width: 45px;  
+        padding: 8px;
+    }
+
+    /* SOBRE MIM */
+    #sobremim-section {
+        padding: 10px;
+    }
+
+    .sobremim-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sobremim-foto img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sobremim-texto {
+        margin-right: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #sobremim-titulo h1 {
+        font-size: 22px;
+    }
+    
+    /* HABILIDADES */
+    
+}
+
+/* ---------------------- TABLETS -------------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home-container {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .home-foto img {
+        width: 300px; 
+        height: 320px;
+    }
+
+    .home-texto {
+        max-width: 500px; 
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 1.6rem; 
+    }
+
+    p {
+        font-size: 1.1rem;  
+    }
+
+    #cv-btn {
+        width: auto;
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+
+    .icons-social {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .icons-social img {
+        width: 45px; 
+        padding: 9px;
+    }
+
+    /* SOBRE MIM */
+
+    .sobremim-container {
+        flex-direction: row-reverse;
+        gap: 30px;
+    }
+
+    .sobremim-foto img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sobremim-texto {
+        max-width: 500px;
+        margin-right: 80px;
+    }
+
+    #sobremim-titulo h1 {
+        font-size: 24px;
+    }
 
 }
